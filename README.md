@@ -47,7 +47,7 @@ For this design: R1 = 24.3 kΩ, R2 = 7.87 kΩ → V_out = 5.00V, D ≈ 42%
 
 ## Simulation Results
 
-All simulations run in **LTSpice XVII** using a behavioral switch model (ideal SW + PWM source) with verified component values. Screenshots in `/Simulations/`.
+All simulations run in **LTSpice** using a behavioral switch model (ideal SW + PWM source) with verified component values. Screenshots in `/Simulations/`.
 
 ### V_out Transient — Startup and Steady State
 
@@ -203,7 +203,7 @@ To be completed once PCB arrives from JLCPCB. Verification will use the oscillos
 buck-converter/
 ├── README.md
 ├── Simulations/
-│   ├── buck.asc                  ← LTSpice XVII schematic (open directly)
+│   ├── buck.asc                  ← LTSpice schematic (open directly)
 │   ├── vout_transient.png        ← V_out startup and steady-state
 │   ├── inductor_current.png      ← I(L1) — startup inrush and steady state
 │   ├── switch_node.png           ← V(n002) — PWM square wave at switch node
@@ -240,7 +240,7 @@ This is the second project in a deliberate analog/power portfolio build:
 
 | Tool | Purpose |
 |---|---|
-| LTSpice XVII | Transient simulation, waveform verification, cursor measurements |
+| LTSpice | Transient simulation, waveform verification, cursor measurements |
 | KiCad 8 | Schematic capture and PCB layout |
 | JLCPCB | PCB fabrication |
 | Bench oscilloscope (IEEE lab, U of M) | Hardware verification (pending) |
