@@ -51,7 +51,7 @@ All simulations run in **LTSpice XVII** using a behavioral switch model (ideal S
 
 ### V_out Transient — Startup and Steady State
 
-![Vout Transient](Simulations/vout_transient.png)
+![Vout Transient](Simulations/Vout_transient.png)
 
 - Starts at 0V, rises and overshoots to **~6.1V** during the first 0.2ms (LC resonance on startup)
 - Settles to steady-state **~4.8V** within **~0.5ms**
@@ -59,7 +59,7 @@ All simulations run in **LTSpice XVII** using a behavioral switch model (ideal S
 
 ### Switch Node Waveform
 
-![Switch Node](Simulations/switch_node.png)
+![Switch Node](Simulations/Switch_Node.png)
 
 - Clean square wave switching between **0V and 12V**
 - Switching frequency measured: **149.6 kHz** (T = 6.684 µs) — target was 150 kHz ✅
@@ -82,7 +82,7 @@ Duty cycle within 1% of theoretical — confirms the behavioral model is running
 
 ### Inductor Current
 
-![Inductor Current](Simulations/inductor_current.png)
+![Inductor Current](Simulations/Inductor_Current.png)
 
 - Startup inrush peaks at **~4.5A** during LC resonance (first 0.5ms)
 - Settles to steady-state average of **~1.0A** — matches expected output current ✅
