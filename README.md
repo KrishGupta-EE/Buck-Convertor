@@ -47,11 +47,11 @@ For this design: R1 = 24.3 kΩ, R2 = 7.87 kΩ → V_out = 5.00V, D ≈ 42%
 
 ## Simulation Results
 
-All simulations run in **LTSpice XVII** using a behavioral switch model (ideal SW + PWM source) with verified component values. Screenshots in `/simulation/`.
+All simulations run in **LTSpice XVII** using a behavioral switch model (ideal SW + PWM source) with verified component values. Screenshots in `/Simulations/`.
 
 ### V_out Transient — Startup and Steady State
 
-![Vout Transient](simulation/vout_transient.png)
+![Vout Transient](Simulations/vout_transient.png)
 
 - Starts at 0V, rises and overshoots to **~6.1V** during the first 0.2ms (LC resonance on startup)
 - Settles to steady-state **~4.8V** within **~0.5ms**
@@ -59,7 +59,7 @@ All simulations run in **LTSpice XVII** using a behavioral switch model (ideal S
 
 ### Switch Node Waveform
 
-![Switch Node](simulation/switch_node.png)
+![Switch Node](Simulations/switch_node.png)
 
 - Clean square wave switching between **0V and 12V**
 - Switching frequency measured: **149.6 kHz** (T = 6.684 µs) — target was 150 kHz ✅
@@ -67,7 +67,7 @@ All simulations run in **LTSpice XVII** using a behavioral switch model (ideal S
 
 ### Duty Cycle Measurement
 
-![On Time](simulation/on_time.png) ![Total Cycle](simulation/total_cycle_time.png)
+![On Time](Simulations/on_time.png) ![Total Cycle](Simulations/total_cycle_time.png)
 
 Measured directly from the switch node waveform using LTSpice cursors:
 
@@ -82,7 +82,7 @@ Duty cycle within 1% of theoretical — confirms the behavioral model is running
 
 ### Inductor Current
 
-![Inductor Current](simulation/inductor_current.png)
+![Inductor Current](Simulations/inductor_current.png)
 
 - Startup inrush peaks at **~4.5A** during LC resonance (first 0.5ms)
 - Settles to steady-state average of **~1.0A** — matches expected output current ✅
@@ -202,7 +202,7 @@ To be completed once PCB arrives from JLCPCB. Verification will use the oscillos
 ```
 buck-converter/
 ├── README.md
-├── simulation/
+├── Simulations/
 │   ├── buck.asc                  ← LTSpice XVII schematic (open directly)
 │   ├── vout_transient.png        ← V_out startup and steady-state
 │   ├── inductor_current.png      ← I(L1) — startup inrush and steady state
