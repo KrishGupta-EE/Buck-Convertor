@@ -197,28 +197,6 @@ To be completed once PCB arrives from JLCPCB. Verification will use the oscillos
 
 ---
 
-## Repository Structure
-
-```
-buck-converter/
-├── README.md
-├── Simulations/
-│   ├── buck.asc                  ← LTSpice schematic (open directly)
-│   ├── vout_transient.png        ← V_out startup and steady-state
-│   ├── inductor_current.png      ← I(L1) — startup inrush and steady state
-│   ├── switch_node.png           ← V(n002) — PWM square wave at switch node
-│   ├── on_time.png               ← cursor measurement: t_on = 2.849 µs
-│   └── total_cycle_time.png      ← cursor measurement: T = 6.684 µs (149.6 kHz)
-├── hardware/
-│   ├── buck.kicad_sch            ← KiCad schematic
-│   ├── buck.kicad_pcb            ← KiCad PCB layout
-│   └── gerbers/                  ← fabrication files (JLCPCB)
-└── docs/
-    └── design_calculations.md    ← full worked equations
-```
-
----
-
 ## Project Context
 
 This is the second project in a deliberate analog/power portfolio build:
