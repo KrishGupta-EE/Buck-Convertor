@@ -209,8 +209,8 @@ This is the second project in a deliberate analog/power portfolio build:
 | 3-Phase BLDC Inverter (planned) | Buck + gate driver PCB + firmware integration | Planned |
 
 **Why this is relevant to power electronics roles:**
-- **Manitoba Hydro:** Grid-tied inverters, HVDC converters, and substation power supplies all use switching regulator topologies. Duty cycle control, inductor sizing, and feedback compensation demonstrated here transfer directly.
-- **Motor Coach Industries:** EV auxiliary power systems (12V bus from HV traction battery) use high-power buck converters. This project is a scaled-down version of that exact circuit topology.
+- Grid-tied inverters, HVDC converters, and substation power supplies all use switching regulator topologies. Duty cycle control, inductor sizing, and feedback compensation demonstrated here transfer directly.
+- EV auxiliary power systems (12V bus from HV traction battery) use high-power buck converters. This project is a scaled-down version of this exact circuit topology.
 
 ---
 
